@@ -116,17 +116,38 @@ export default function Landing() {
                 mengobati koreng dan luka bakar atau meningkatkan kesuburan tanduk domba serta essen mancing.
               </p>
 
-              {/* CTA Buttons */}
+              {/* CTA Buttons*/}
               <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start overflow-hidden p-2">
-                <Button onClick={() => {window.open(`https://shopee.co.id/Minyak-Biawak-Asli-Menyembuhkan-Gatal-gatal-Alergi-Eksim-Esen-Memancing-Minyak-Tanduk-i.1380118779.27464620647?extraParams=%7B%22display_model_id%22%3A280088482730%2C%22model_selection_logic%22%3A2%7D`);}} className="inline-flex items-center justify-center gap-2 px-10 py-4 rounded-xl text-lg font-semibold bg-green-500 hover:bg-green-600 text-white shadow-xs shadow-green-500/30 transition-all duration-300 hover:scale-105 hover:shadow-xl">
-                  Beli Sekarang
+
+                {/* Tombol Shopee */}
+                <Button
+                  onClick={() => {
+                    window.open("https://shopee.co.id/Minyak-Biawak-Asli-Menyembuhkan-Gatal-gatal-Alergi-Eksim-Esen-Memancing-Minyak-Tanduk-i.1380118779.27464620647");
+                  }}
+                  className="inline-flex items-center justify-center gap-2 px-10 py-4 rounded-xl text-lg font-semibold bg-orange-500 hover:bg-orange-600 text-white shadow-lg shadow-orange-500/30 transition-all duration-300 hover:scale-105 hover:shadow-xl"
+                >
+                  Beli di Shopee
                   <ArrowRight className="w-5 h-5" />
                 </Button>
+
+                {/* Tombol TikTok */}
+                <Button
+                  onClick={() => {
+                    window.open("https://www.tiktok.com/");
+                  }}
+                  className="inline-flex items-center justify-center gap-2 px-10 py-4 rounded-xl text-lg font-semibold bg-black hover:bg-gray-800 text-white shadow-lg transition-all duration-300 hover:scale-105 hover:shadow-xl"
+                >
+                  Beli di TikTok
+                  <ArrowRight className="w-5 h-5" />
+                </Button>
+
+                {/* Tombol Pelajari */}
                 <Link to="/about">
                   <Button className="inline-flex items-center justify-center gap-2 px-10 py-4 rounded-xl text-lg font-semibold">
                     Pelajari Lebih Lanjut
                   </Button>
                 </Link>
+
               </div>
 
               {/* Trust Badges */}
